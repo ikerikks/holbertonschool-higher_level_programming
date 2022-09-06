@@ -2,4 +2,4 @@
 str = "Python is an interpreted, interactive, object-oriented programming\
  language that combines remarkable power with very clear syntax"
 #str = "object-oriented programming with Python"
-print("object-oriented programming with Python")
+print('bject-oriented programming with Python')
