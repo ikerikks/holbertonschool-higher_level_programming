@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-str = '''Beautiful is better than ugly.
+str = '''The Zen of Python, by Tim Peters\n
+Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
 Complex is better than complicated.
