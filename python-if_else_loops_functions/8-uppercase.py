@@ -4,7 +4,7 @@ def uppercase(str):
         if ord(letter) in range(97, 122):
             letter = chr(ord(letter) - 32)
 
-        print(f"{letter}", end="")
+        print("{}".format(letter), end="")
     print("")
 
 
