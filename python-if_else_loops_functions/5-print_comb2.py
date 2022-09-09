@@ -3,7 +3,7 @@
 i = 0
 
 while i != 99:
-    print(f"{i}, ".format(i), end="")
+    print(f"{i:02d}, ".format(i), end="")
     i += 1
 
 print(i, end="\n")
