@@ -6,5 +6,5 @@ def new_in_list(my_list, idx, element):
         pass
     else:
         temp[idx] = element
-    
+
     return temp
