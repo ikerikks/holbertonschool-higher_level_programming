@@ -15,5 +15,4 @@ class Square:
         Returns:
             None
         """
-
-        return None
+        self.__size = size
