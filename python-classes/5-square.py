@@ -42,7 +42,7 @@ class Square:
             raise(ValueError("size must be >= 0"))
         else:
             self.__size = int(value)
-    
+
     def my_print(self):
         if self.__size == 0:
             print("")
