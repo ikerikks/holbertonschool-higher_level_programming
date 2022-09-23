@@ -10,13 +10,18 @@ class Square:
         Args:
             size : size of square
         """
+        self.__size = int(size)
+        self.__position = position
+
         if not isinstance(size, int):
             raise(TypeError("size must be an integer"))
         elif size < 0:
             raise(ValueError("size must be >= 0"))
-        else:
-            self.__size = int(size)
-            self.__position = position
+
+        if type(position) is not tuple or len(position) != 2 or \
+            type(position[0]) is not int or position[0] < 0 or \
+                type(position[1]) is not int or position[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         """ defines the area of the square.
