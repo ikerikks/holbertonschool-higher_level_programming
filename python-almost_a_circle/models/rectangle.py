@@ -52,7 +52,7 @@ class Rectangle(Base):
             """setter of x"""
             if type(value) is not int:
                 raise(TypeError("x must be an integer"))
-            if x > 0:
+            if value > 0:
                 raise(ValueError("x must be <= 0"))
             self.__x = value
 
@@ -66,6 +66,6 @@ class Rectangle(Base):
             """setter of y"""
             if type(value) is not int:
                 raise(TypeError("y must be an integer"))
-            if y > 0:
+            if value > 0:
                 raise(ValueError("y must be <= 0"))
             self.__y = value
