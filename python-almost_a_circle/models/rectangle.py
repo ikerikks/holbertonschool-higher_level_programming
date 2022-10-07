@@ -71,11 +71,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """Calculate area of rectangle"""
+        """area of rectangle"""
         return self.__height * self.__width
 
     def display(self):
-        """Display a rectangle"""
+        """display rectangle"""
         rectangle = self.y * "\n"
         for i in range(self.height):
             rectangle += (" " * self.x)
@@ -83,7 +83,7 @@ class Rectangle(Base):
         print(rectangle, end='')
 
     def __str__(self):
-        """str special method"""
+        """str method"""
         str_rectangle = "[Rectangle] "
         str_id = "({}) ".format(self.id)
         str_xy = "{}/{} - ".format(self.x, self.y)
@@ -92,7 +92,7 @@ class Rectangle(Base):
         return str_rectangle + str_id + str_xy + str_wh
 
     def update(self, *args, **kwargs):
-        """Update method"""
+        """method to update"""
         if args is not None and len(args) != 0:
             list_atr = ['id', 'width', 'height', 'x', 'y']
             for i in range(len(args)):
@@ -102,7 +102,7 @@ class Rectangle(Base):
                 setattr(self, key, value)
 
     def to_dictionary(self):
-        """returns the dictionary representation"""
+        """dictionary representation"""
         td = {'x': self.x, 'y': self.y, 'id': self.id,
               'height': self.height, 'width': self.width}
         return td
