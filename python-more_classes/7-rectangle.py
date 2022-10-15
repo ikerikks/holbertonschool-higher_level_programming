@@ -4,6 +4,10 @@
 
 class Rectangle:
     """class rectangle"""
+
+    number_of_instances = 0
+    print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """initializes new rectangle
         Args:
@@ -12,6 +16,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -58,7 +63,7 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    string += '#'
+                    string += str(self.print_symbol)
                 if i != self.__height - 1:
                     string += '\n'
             return string
