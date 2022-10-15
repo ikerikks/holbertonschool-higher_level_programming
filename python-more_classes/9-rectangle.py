@@ -7,6 +7,7 @@ class Rectangle:
 
     number_of_instances = 0
     print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         """initializes new rectangle
         Args:
@@ -94,6 +95,7 @@ class Rectangle:
                 return rect_1
             else:
                 return rect_2
+
     @classmethod
     def square(cls, size=0):
         """new Rectangle instance"""
