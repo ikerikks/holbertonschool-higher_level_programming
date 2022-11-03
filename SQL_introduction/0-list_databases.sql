@@ -1,2 +1,2 @@
 -- list all database of server
-SELECT *;
+SHOW DATABASES;
