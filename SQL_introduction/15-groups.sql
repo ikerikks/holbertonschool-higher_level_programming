@@ -1,5 +1,5 @@
 -- number by score
-SELECT score, number
+SELECT score, count(*) AS NUMBER 
 FROM second_table
-ORDER BY number DESC
-GROUP BY score;
+GROUP BY score 
+ORDER BY score DESC;
