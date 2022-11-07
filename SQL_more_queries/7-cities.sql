@@ -4,6 +4,6 @@ USE hbtn_0d_usa;
 CREATE TABLE IF NOT EXISTS cities(
     id INT UNIQUE AUTO_INCREMENT PRIMARY KEY,
     state_id INT,
-    name VARCHAR(256);
+    name VARCHAR(256),
+    FOREIGN KEY (state_id) REFERENCES states(id)
 );
-ADD FOREIGN KEY (state_id) REFERENCES states(id);
