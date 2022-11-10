@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Get all states """
+""" Cities by state """
 
 import sys
 
@@ -15,7 +15,8 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM cites ORDER BY id;")
+    cur.execute("SELECT id, name, states.name FROM cites ORDER BY id\
+        JOIN states ON states_id = states.id;")
     rows = cur.fetchall()
     for row in rows:
         print(row)
