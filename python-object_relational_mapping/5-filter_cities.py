@@ -19,8 +19,7 @@ if __name__ == "__main__":
         FROM cities JOIN states ON cities.state_id = states.id; \
             WHERE sates.name = '{}';".format(sys.argv[4]))
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    print(", ".join([row[1] for row in rows]))
 
     cur.close()
     db.close()
