@@ -18,7 +18,7 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id;")
     rows = cur.fetchall()
     for row in rows:
-        if (row[1] == "N"):
+        if 'N' in row[1]:
             print(row)
 
     cur.close()
