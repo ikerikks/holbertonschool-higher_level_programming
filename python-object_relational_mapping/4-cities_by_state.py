@@ -15,7 +15,7 @@ if __name__ == "__main__":
     )
 
     cur = db.cursor()
-    cur.execute("SELECT id, name, states.name FROM cites\
+    cur.execute("SELECT id, name, states.name FROM cites \
         JOIN states ON states_id = states.id ORDER BY id;")
     rows = cur.fetchall()
     for row in rows:
