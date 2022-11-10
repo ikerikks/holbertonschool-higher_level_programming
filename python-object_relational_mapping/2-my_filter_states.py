@@ -13,7 +13,6 @@ if __name__ == "__main__":
         user=sys.argv[1],
         password=sys.argv[2],
         db=sys.argv[3],
-        state=sys.argv[4]
     )
 
     cur = db.cursor()
