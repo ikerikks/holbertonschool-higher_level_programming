@@ -20,6 +20,5 @@ if __name__ == "__main__":
             WHERE sates.name = '{}';".format(sys.argv[4]))
     rows = cur.fetchall()
     print(", ".join([row[1] for row in rows]))
+    
 
-    cur.close()
-    db.close()
