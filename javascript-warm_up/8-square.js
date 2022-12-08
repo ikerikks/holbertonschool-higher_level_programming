@@ -10,7 +10,7 @@ if (!firstArg) {
 } else {
   while (i < firstArg) {
     while (j < firstArg) {
-      squareSymbol += '#';
+      squareSymbol += 'X';
       j++;
     }
 
