@@ -7,9 +7,7 @@ let i = 0;
 let j = 0;
 
 request(apiUrl, (error, response, body) => {
-  if (error) {
-    console.error(error);
-  } else {
+  if (error === null) {
     body = JSON.parse(body);
     const results = body.results;
 
