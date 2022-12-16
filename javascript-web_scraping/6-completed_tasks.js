@@ -14,9 +14,9 @@ request(apiUrl, (error, response, body) => {
       if (body[i].completed === true) {
         if (todosTab[body[i].userId] === undefined) {
           todosTab[body[i].userId] = 0;
-        } else {
-          todosTab[body[i].userId]++;
         }
+        todosTab[body[i].userId]++;
+        
       }
     }
 
