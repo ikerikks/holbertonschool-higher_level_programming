@@ -14,7 +14,7 @@ request(apiUrl, (error, response, body) => {
 
     for (i in results) {
       for (j in results[i].characters) {
-        if (results[i].characters[j].search('18') > 0) {
+        if (results[i].characters[j] == characterUrl) {
           counter++;
         }
       }
