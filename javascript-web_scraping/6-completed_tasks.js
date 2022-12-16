@@ -12,11 +12,11 @@ request(apiUrl, (error, response, body) => {
 
     for (i in body) {
       if (body[i].completed === true) {
+        // check if the userId value change
         if (todosTab[body[i].userId] === undefined) {
           todosTab[body[i].userId] = 0;
         }
         todosTab[body[i].userId]++;
-        
       }
     }
 
